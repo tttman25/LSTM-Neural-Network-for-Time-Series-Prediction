@@ -23,7 +23,7 @@ def load_data(filename, seq_len, normalise_window):
         result = normalise_windows(result)
 
     result = np.array(result)
-
+#helps with console
     row = round(0.9 * result.shape[0])
     train = result[:int(row), :]
     np.random.shuffle(train)
