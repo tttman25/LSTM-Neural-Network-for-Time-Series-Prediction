@@ -21,12 +21,12 @@ def plot_results_multiple(predicted_data, true_data, prediction_len):
         plt.legend()
     plt.show()
 
-#Main Run Thread
+#Main Run Thread 
 if __name__=='__main__':
 	global_start_time = time.time()
 	epochs  = 1
 	seq_len = 50
-
+#cuts error rate
 	print('> Loading data... ')
 
 	X_train, y_train, X_test, y_test = lstm.load_data('sp500.csv', seq_len, True)
